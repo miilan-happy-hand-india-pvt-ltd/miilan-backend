@@ -22,8 +22,6 @@ app.use((req, res, next) => {
   next();
 });
 
-console.log("start");
-
 app.use("/api", userRoute);
 app.use("/api", MissingdataRoute);
 app.use("/api", paymentRouter);
