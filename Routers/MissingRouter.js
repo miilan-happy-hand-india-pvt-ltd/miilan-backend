@@ -7,11 +7,9 @@ const {
   deleteMissingData,
   updateMissingData,
   upload,
-} = require("../controler/MissingDataControler");
+} = require("../controller/MissingDataControler");
 const missingRoute = express.Router();
 
-missingRoute.use(express.json());
-missingRoute.use(express.urlencoded({ extended: true }));
 
 missingRoute.post(
   "/create",

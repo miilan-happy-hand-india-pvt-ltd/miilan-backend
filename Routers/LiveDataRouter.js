@@ -6,11 +6,8 @@ const {
   deleteLiveData,
   updateLiveData,
   upload,
-} = require("../controler/liveControler");
+} = require("../controller/liveControler");
 const liveRoute = express.Router();
-
-liveRoute.use(express.json());
-liveRoute.use(express.urlencoded({ extended: true }));
 
 liveRoute.post(
   "/createlive",

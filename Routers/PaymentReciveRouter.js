@@ -5,11 +5,9 @@ const {
   addPaymentRecive,
   getPaymentRecive,
   upload,
-} = require("../controler/paymentReciveControler");
+} = require("../controller/paymentReciveControler");
 const paymentReciveRoute = express.Router();
 
-paymentReciveRoute.use(express.json());
-paymentReciveRoute.use(express.urlencoded({ extended: true }));
 
 paymentReciveRoute.post(
   "/createpayment",

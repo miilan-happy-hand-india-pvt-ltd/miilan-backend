@@ -4,10 +4,7 @@ const locationRouter = express.Router();
 const {
   addLocations,
   getLocations,
-} = require("../controler/locationsControler");
-
-locationRouter.use(express.json());
-locationRouter.use(express.urlencoded({ extended: true }));
+} = require("../controller/locationsControler");
 
 locationRouter.post("/addlocation",Auth, addLocations);
 locationRouter.get("/getlocation",Auth, getLocations);
